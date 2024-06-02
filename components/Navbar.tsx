@@ -43,7 +43,9 @@ const Navbar = () => {
 					{paths.map((path, index) => (
 						<Link key={index} href={path.path} className={cn(
 							'text-zinc-950 dark:text-zinc-50 font-semibold',
-							currentPath === path.path ? 'text-red-600 dark:text-red-600' : ''
+							'hover:text-red-400 dark:hover:text-red-600',
+							'transition',
+							currentPath === path.path ? 'text-red-400 dark:text-red-600' : ''
 						)}>
 							{path.name}
 						</Link>
