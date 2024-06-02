@@ -1,10 +1,11 @@
-import ThemeToggleButton from '@/components/utilities/ThemeToggleButton'
+import Navbar from '@/components/Navbar'
 
 const HomePage = () => {
 	return (
 		<main className="min-h-screen bg-white dark:bg-zinc-950">
-			<h1 className="text-zinc-950 dark:text-zinc-50">Home Page</h1>
-			<ThemeToggleButton />
+			<div className="grid grid-cols-4 md:grid-cols-12 gap-5 px-[175px] py-10">
+				<Navbar />
+			</div>
 		</main>
 	)
 }
