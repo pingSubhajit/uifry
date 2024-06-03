@@ -45,7 +45,7 @@ const Footer = ({ className }: { className?: string }) => {
 	return (
 		<GridContainer className={className}>
 			<footer className="col-span-full">
-				<div className="flex flex-col lg:flex-row gap-16">
+				<div className="flex flex-col xl:flex-row gap-16">
 					<div className="w-64 xl:w-80 2xl:w-96 space-y-4">
 						<Link href="/">
 							{mounted && theme === 'dark' ? <Image src={logoImgDark} alt="UIFry logo"/> :
@@ -64,7 +64,7 @@ const Footer = ({ className }: { className?: string }) => {
 							<p className="font-medium hover:underline underline-offset-4">+1 234 456 678 89</p>
 						</button>
 					</div>
-					<div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16">
+					<div className="w-full grid grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-16">
 						{footerLinks.map((section, index) => (
 							<div key={index}>
 								<h2 className="font-medium text-3xl mb-4 capitalize">{section.title}</h2>
