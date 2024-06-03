@@ -21,34 +21,35 @@ const Testimonials = ({ className }: { className?: string }) => {
 					What our users say about us?
 				</h2>
 			</div>
-			<div className="col-span-5 relative flex items-center aspect-square">
+			<div className="col-span-5 relative flex items-center aspect-square max-w-[400px] lg:max-w-none
+			min-w-[300px] lg:min-w-0 mx-auto lg:mx-0">
 				<Star className="w-12 h-12 rotate-45 absolute -bottom-48 -left-24" />
-				<UnderlayCircles className="absolute scale-125 top-[50%] left-[50%] -translate-x-[55%] -translate-y-[50%] -z-10"/>
+				<UnderlayCircles className="absolute scale-[0.6] lg:scale-100 xl:scale-125 top-[50%] left-[50%] -translate-x-[55%] -translate-y-[50%] -z-10"/>
 				<Image src={redYellowBlurredUnderlay} alt="Red blurred underlay" className="-z-10 absolute -left-24 rotate-180 pointer-events-none"/>
 				<Image
 					src={face5}
 					alt="Face of a person who gave a testimonial about the tracking app"
-					className="w-auto mx-auto"
+					className="w-36 xl:w-auto mx-auto"
 				/>
 				<Image
 					src={face1}
 					alt="Face of a person who gave a testimonial about the tracking app"
-					className="absolute w-28 top-0 left-0"
+					className="absolute w-24 xl:w-28 top-0 left-0"
 				/>
 				<Image
 					src={face2}
 					alt="Face of a person who gave a testimonial about the tracking app"
-					className="absolute w-28 top-0 right-0"
+					className="absolute w-24 xl:w-28 top-0 right-0"
 				/>
 				<Image
 					src={face3}
 					alt="Face of a person who gave a testimonial about the tracking app"
-					className="absolute w-28 bottom-0 left-0"
+					className="absolute w-24 xl:w-28 bottom-0 left-0"
 				/>
 				<Image
 					src={face4}
 					alt="Face of a person who gave a testimonial about the tracking app"
-					className="absolute w-28 bottom-0 right-0"
+					className="absolute w-24 xl:w-28 bottom-0 right-0"
 				/>
 			</div>
 
