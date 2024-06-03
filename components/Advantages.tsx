@@ -11,11 +11,12 @@ import Image from 'next/image'
 import {Bell, Sparkle} from 'lucide-react'
 import Star from '@/assets/Star'
 import {motion} from 'framer-motion'
+import {cn} from '@/lib/utils'
 
 const Advantages = ({ className }: { className?: string }) => {
 	return (
 		<>
-			<GridContainer className={className}>
+			<GridContainer className={cn('flex-col-reverse', className)}>
 				<div className="col-span-5 flex flex-col justify-center relative gap-6">
 					<div>
 						<h4 className="uppercase text-red-500 dark:text-red-600 font-medium text-lg tracking-widest">
@@ -39,9 +40,9 @@ const Advantages = ({ className }: { className?: string }) => {
 				</div>
 
 				<div className="col-span-5 col-start-8 relative">
-					<Star className="absolute top-16 -right-24"/>
+					<Star className="absolute top-16 right-4 lg:right-24"/>
 					<UnderlayCircles
-						className="absolute scale-125 top-[50%] left-[50%] -translate-x-[55%] -translate-y-[50%] -z-10"
+						className="absolute scale-[0.6] lg:scale-100 xl:scale-125 top-[50%] left-[50%] -translate-x-[55%] -translate-y-[50%] -z-10"
 					/>
 					<Image
 						src={redYellowBlurredUnderlay}
@@ -51,7 +52,7 @@ const Advantages = ({ className }: { className?: string }) => {
 					<Image
 						src={mockup2}
 						alt="iPhone mockup showcasing tracking page of the tracking app"
-						className="max-h-[700px] w-auto mx-auto"
+						className="max-h-[450px] lg:max-h-[550px] xl:max-h-[700px] w-auto mx-auto"
 					/>
 					<motion.div
 						className="absolute left-[50%] top-72 origin-top-left"
@@ -69,9 +70,9 @@ const Advantages = ({ className }: { className?: string }) => {
 
 			<GridContainer className="mt-20">
 				<div className="col-span-5 relative">
-					<Star className="w-12 h-12 rotate-45 absolute top-16 -right-24"/>
+					<Star className="w-12 h-12 rotate-45 absolute top-16 right-8 lg:-right-24"/>
 					<UnderlayCircles
-						className="absolute scale-125 top-[50%] left-[50%] -translate-x-[55%] -translate-y-[50%] -z-10"
+						className="absolute scale-[0.6] lg:scale-100 xl:scale-125 top-[50%] left-[50%] -translate-x-[55%] -translate-y-[50%] -z-10"
 					/>
 					<Image
 						src={redYellowBlurredUnderlay}
@@ -81,7 +82,7 @@ const Advantages = ({ className }: { className?: string }) => {
 					<Image
 						src={mockup1}
 						alt="iPhone mockup showcasing home page of the tracking app"
-						className="max-h-[700px] w-auto mx-auto"
+						className="max-h-[450px] lg:max-h-[550px] xl:max-h-[700px] w-auto mx-auto"
 					/>
 					<motion.div
 						className="absolute left-[30%] top-44 origin-center"
@@ -92,7 +93,7 @@ const Advantages = ({ className }: { className?: string }) => {
 						<Image
 							src={card}
 							alt="Credit card image"
-
+							className="w-48 lg:w-auto"
 						/>
 					</motion.div>
 				</div>

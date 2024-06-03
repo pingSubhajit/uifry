@@ -11,7 +11,7 @@ const FeaturesGrid = ({ className }: { className?: string }) => {
 		<GridContainer className={className}>
 			<div className="col-span-5 relative">
 				<Star className="w-12 h-12 rotate-45 absolute top-16 -left-24" />
-				<UnderlayCircles className="absolute scale-75 lg:scale-100 xl:scale-125 top-[50%] left-[50%] -translate-x-[55%]
+				<UnderlayCircles className="absolute scale-[0.6] lg:scale-100 xl:scale-125 top-[50%] left-[50%] -translate-x-[55%]
 				-translate-y-[50%] -z-10" />
 				<Image src={redYellowBlurredUnderlay} alt="Red blurred underlay" className="-z-10 absolute -left-24 rotate-180 pointer-events-none"/>
 				<Image src={mockup1} alt="iPhone mockup showcasing home page of the tracking app" className="max-h-[450px] lg:max-h-[550px] xl:max-h-[700px] w-auto mx-auto"/>
@@ -56,7 +56,8 @@ const FeaturesGrid = ({ className }: { className?: string }) => {
 					</li>
 				</ul>
 
-				<Image src={redYellowBlurredUnderlay} alt="Red blurred underlay" className="-z-10 scale-[0.65] absolute top-0 -right-[450px] pointer-events-none"/>
+				{/*<Image src={redYellowBlurredUnderlay} alt="Red blurred underlay" className="-z-10 scale-[0.65] absolute*/}
+				{/*top-0 right-0 lg:-right-[450px] pointer-events-none"/>*/}
 			</div>
 		</GridContainer>
 	)
