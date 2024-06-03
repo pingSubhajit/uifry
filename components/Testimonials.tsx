@@ -53,7 +53,7 @@ const Testimonials = ({ className }: { className?: string }) => {
 				/>
 			</div>
 
-			<div className="col-span-5 col-start-8 flex flex-col gap-6 justify-center relative">
+			<div className="mt-8 lg:mt-0 col-span-5 col-start-8 flex flex-col gap-6 justify-center relative">
 				<h3 className="font-semibold text-3xl capitalize flex items-center gap-4 text-balance">
 					The best financial accounting app ever!
 				</h3>
