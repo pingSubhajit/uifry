@@ -11,6 +11,8 @@ import Star from '@/assets/Star'
 const CTASection = ({ className }: { className?: string }) => {
 	return (
 		<GridContainer className={cn('relative', className)}>
+			<Star className="absolute -left-36 top-28 w-12 h-12 rotate-45"/>
+			<Star className="absolute -right-28 -top-28"/>
 			<Image src={redYellowBlurredUnderlay} alt="Red blurred underlay" className="-z-10 absolute scale-50 -top-96 -left-[500px] pointer-events-none"/>
 			<div className="col-span-full bg-zinc-950 dark:bg-zinc-50 rounded-lg px-20 py-40 overflow-hidden relative">
 				<UnderlayCircles className="text-zinc-50 dark:text-zinc-950 absolute scale-125 -bottom-64 -right-64 -translate-y-[50%] pointer-events-none"/>

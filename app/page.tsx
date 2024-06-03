@@ -5,6 +5,7 @@ import Advantages from '@/components/Advantages'
 import Testimonials from '@/components/Testimonials'
 import FaqSection from '@/components/FaqSection'
 import CTASection from '@/components/CTASection'
+import Footer from '@/components/Footer'
 
 const HomePage = () => {
 	return (
@@ -16,6 +17,7 @@ const HomePage = () => {
 			<Testimonials className="mt-20" />
 			<FaqSection className="mt-64" />
 			<CTASection className="mt-36" />
+			<Footer className="mt-36" />
 		</>
 	)
 }
