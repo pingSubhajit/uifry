@@ -19,7 +19,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 					disableTransitionOnChange
 				>
 					<SmoothScrollProvider>
-						<main className="min-h-screen px-[175px] py-10">
+						<main className="min-h-screen px-8 lg:px-24 xl:px-[175px] py-10">
+							{/*<Navbar />*/}
 							{children}
 						</main>
 
