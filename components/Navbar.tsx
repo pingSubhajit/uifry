@@ -10,10 +10,12 @@ import {usePathname} from 'next/navigation'
 import {cn} from '@/lib/utils'
 import Button from '@/components/ui/Button'
 import GridContainer from '@/components/utilities/GridContainer'
+import useMounted from '@/hooks/useMounted'
 
 const Navbar = () => {
 	const { theme } = useTheme()
 	const currentPath = usePathname()
+	const mounted = useMounted()
 
 	const paths = [
 		{
@@ -39,7 +41,7 @@ const Navbar = () => {
 			<div className="col-span-full flex items-center justify-between">
 				<div className="flex items-center">
 					<Link href="/">
-						{theme === 'dark' ? <Image src={logoImgDark} alt="UIFry logo" /> : <Image src={logoImg} alt="UIFry logo" />}
+						{mounted && theme === 'dark' ? <Image src={logoImgDark} alt="UIFry logo" /> : <Image src={logoImg} alt="UIFry logo" />}
 					</Link>
 					<div className="flex items-center space-x-5 ml-11">
 						{paths.map((path, index) => (
