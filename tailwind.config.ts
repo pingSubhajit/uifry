@@ -16,6 +16,9 @@ const config: Config = {
 			},
 			fontFamily: {
 				ClashDisplay: ['Clash Display', 'sans-serif'],
+			},
+			colors: {
+				foreground: 'hsl(var(--foreground))'
 			}
 		},
 	},
