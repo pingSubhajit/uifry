@@ -5,6 +5,7 @@ import ThemeProvider from '@/components/providers/ThemeProvider'
 import grainUnderlay from '@/public/grain_underlay.png'
 import Image from 'next/image'
 import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider'
+import Navbar from '@/components/Navbar'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -20,7 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 				>
 					<SmoothScrollProvider>
 						<main className="min-h-screen px-8 lg:px-24 xl:px-[175px] py-10">
-							{/*<Navbar />*/}
+							<Navbar />
 							{children}
 						</main>
 

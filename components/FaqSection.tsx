@@ -28,7 +28,7 @@ const FaqSection = ({ className }: { className?: string }) => {
 					mauris.
 				</p>
 			</div>
-			<div className="col-span-6 bg-red-500 lg:bg-transparent rounded-lg p-8">
+			<div className="col-span-6 text-zinc-50 bg-red-500 lg:text-zinc-950 lg:dark:text-zinc-50 lg:bg-transparent rounded-lg p-8">
 				<h3 className="font-semibold text-3xl capitalize">
 					The best financial accounting app ever!
 				</h3>
@@ -37,11 +37,11 @@ const FaqSection = ({ className }: { className?: string }) => {
 					mauris.
 				</p>
 			</div>
-			<div className="col-span-6 lg:bg-red-500 rounded-lg p-8">
-				<h3 className="font-semibold text-3xl capitalize text-zinc-50">
+			<div className="col-span-6 text-zinc-950 dark:text-zinc-50 lg:text-zinc-50 lg:bg-red-500 rounded-lg p-8">
+				<h3 className="font-semibold text-3xl capitalize">
 					The best financial accounting app ever!
 				</h3>
-				<p className="font-medium text-lg text-balance mt-2 text-zinc-50">
+				<p className="font-medium text-lg text-balance mt-2">
 					“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit
 					mauris.
 				</p>

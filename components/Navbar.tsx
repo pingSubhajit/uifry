@@ -43,7 +43,7 @@ const Navbar = () => {
 					<Link href="/">
 						{mounted && theme === 'dark' ? <Image src={logoImgDark} alt="UIFry logo" /> : <Image src={logoImg} alt="UIFry logo" />}
 					</Link>
-					<div className="flex items-center space-x-5 ml-11">
+					<div className="hidden lg:flex items-center space-x-5 ml-11">
 						{paths.map((path, index) => (
 							<Link key={index} href={path.path} className={cn(
 								'text-zinc-950 dark:text-zinc-50 font-semibold',
