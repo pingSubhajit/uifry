@@ -4,6 +4,7 @@ import FeaturesGrid from '@/components/FeaturesGrid'
 import Advantages from '@/components/Advantages'
 import Testimonials from '@/components/Testimonials'
 import FaqSection from '@/components/FaqSection'
+import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
 	title: 'Batch System Assignment | UIFry',
@@ -23,7 +24,7 @@ const HomePage = () => {
 			<Advantages className="mt-20" />
 			<Testimonials className="mt-20" />
 			<FaqSection className="mt-20 xl:mt-64" />
-			{/*<CTASection className="mt-36" />*/}
+			<CTASection className="mt-20 lg:mt-36" />
 			{/*<Footer className="mt-36" />*/}
 		</>
 	)
