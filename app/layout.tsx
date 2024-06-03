@@ -25,7 +25,9 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					{children}
+					<main className="min-h-screen bg-white dark:bg-zinc-950 px-[175px] py-10 overflow-x-hidden">
+						{children}
+					</main>
 				</ThemeProvider>
 			</body>
 		</html>

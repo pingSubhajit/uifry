@@ -10,7 +10,7 @@ const ThemeToggleButton = ({ className }: { className?: string }) => {
 
 	return (
 		<button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className={cn(
-			'bg-zinc-950 dark:bg-zinc-50 p-2 rounded-md text-zinc-50 dark:text-zinc-950 aspect-square',
+			'bg-zinc-950 dark:bg-zinc-50 p-4 rounded-md text-zinc-50 dark:text-zinc-950 aspect-square',
 			'hover:bg-red-600 dark:hover:bg-red-600 dark:hover:text-zinc-50',
 			'transition',
 			className
