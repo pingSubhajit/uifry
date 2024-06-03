@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
-			<body className="font-ClashDisplay bg-white dark:bg-zinc-950 overflow-x-hidden relative">
+			<body className="font-ClashDisplay bg-white dark:bg-zinc-950 overflow-x-hidden relative max-w-[1920px] mx-auto">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

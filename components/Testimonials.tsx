@@ -27,27 +27,27 @@ const Testimonials = ({ className }: { className?: string }) => {
 				<Image src={redYellowBlurredUnderlay} alt="Red blurred underlay" className="-z-10 absolute -left-24 rotate-180 pointer-events-none"/>
 				<Image
 					src={face5}
-					alt="iPhone mockup showcasing home page of the tracking app"
+					alt="Face of a person who gave a testimonial about the tracking app"
 					className="w-auto mx-auto"
 				/>
 				<Image
 					src={face1}
-					alt="iPhone mockup showcasing home page of the tracking app"
+					alt="Face of a person who gave a testimonial about the tracking app"
 					className="absolute w-28 top-0 left-0"
 				/>
 				<Image
 					src={face2}
-					alt="iPhone mockup showcasing home page of the tracking app"
+					alt="Face of a person who gave a testimonial about the tracking app"
 					className="absolute w-28 top-0 right-0"
 				/>
 				<Image
 					src={face3}
-					alt="iPhone mockup showcasing home page of the tracking app"
+					alt="Face of a person who gave a testimonial about the tracking app"
 					className="absolute w-28 bottom-0 left-0"
 				/>
 				<Image
 					src={face4}
-					alt="iPhone mockup showcasing home page of the tracking app"
+					alt="Face of a person who gave a testimonial about the tracking app"
 					className="absolute w-28 bottom-0 right-0"
 				/>
 			</div>
@@ -65,11 +65,11 @@ const Testimonials = ({ className }: { className?: string }) => {
 				</p>
 
 				<div className="flex gap-2">
-					<Image src={face1} alt="iPhone mockup showcasing home page of the tracking app" className="w-10" />
-					<Image src={face2} alt="iPhone mockup showcasing home page of the tracking app" className="w-10" />
-					<Image src={face3} alt="iPhone mockup showcasing home page of the tracking app" className="w-10" />
-					<Image src={face4} alt="iPhone mockup showcasing home page of the tracking app" className="w-10" />
-					<Image src={face5} alt="iPhone mockup showcasing home page of the tracking app" className="w-10" />
+					<Image src={face1} alt="Face of a person who gave a testimonial about the tracking app" className="w-10" />
+					<Image src={face2} alt="Face of a person who gave a testimonial about the tracking app" className="w-10" />
+					<Image src={face3} alt="Face of a person who gave a testimonial about the tracking app" className="w-10" />
+					<Image src={face4} alt="Face of a person who gave a testimonial about the tracking app" className="w-10" />
+					<Image src={face5} alt="Face of a person who gave a testimonial about the tracking app" className="w-10" />
 				</div>
 
 				<h6 className="capitalize text-lg font-semibold">Nick Jonas</h6>
