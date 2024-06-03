@@ -17,8 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
-
-			<body className="font-ClashDisplay bg-white dark:bg-zinc-95 overflow-x-hidden relative">
+			<body className="font-ClashDisplay bg-white dark:bg-zinc-950 overflow-x-hidden relative">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
@@ -30,7 +29,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 							{children}
 						</main>
 
-						<div className="absolute inset-0 mix-blend-soft-light z-[-1] pointer-events-none w-screen max-h-full overflow-y-hidden">
+						<div className="absolute inset-0 mix-blend-soft-light z-[-1] dark:opacity-50 pointer-events-none w-screen max-h-full overflow-y-hidden">
 							<Image src={grainUnderlay} alt="Grain underlay" className="w-full h-[8220px]" />
 						</div>
 
