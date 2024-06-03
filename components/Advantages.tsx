@@ -1,13 +1,16 @@
+'use client'
+
 import GridContainer from '@/components/utilities/GridContainer'
 import UnderlayCircles from '@/assets/UnderlayCircles'
 import mockup1 from '@/public/mockup1.png'
 import mockup2 from '@/public/mockup2.png'
 import card from '@/public/card.svg'
-import income from '@/public/income.svg'
+import income from '@/public/income.png'
 import redYellowBlurredUnderlay from '@/public/red_yellow_blurred_underlay.png'
 import Image from 'next/image'
 import {Bell, Sparkle} from 'lucide-react'
 import Star from '@/assets/Star'
+import {motion} from 'framer-motion'
 
 const Advantages = ({ className }: { className?: string }) => {
 	return (
@@ -50,11 +53,17 @@ const Advantages = ({ className }: { className?: string }) => {
 						alt="iPhone mockup showcasing tracking page of the tracking app"
 						className="max-h-[700px] w-auto mx-auto"
 					/>
-					<Image
-						src={income}
-						alt="Credit card image"
-						className="absolute left-[50%] top-72 scale-125"
-					/>
+					<motion.div
+						className="absolute left-[50%] top-72 origin-top-left"
+						initial={{ scale: 0 }}
+						whileInView={{ scale: 1.25 }}
+						transition={{duration: 0.5, type: 'spring'}}
+					>
+						<Image
+							src={income}
+							alt="Credit card image"
+						/>
+					</motion.div>
 				</div>
 			</GridContainer>
 
@@ -74,11 +83,18 @@ const Advantages = ({ className }: { className?: string }) => {
 						alt="iPhone mockup showcasing home page of the tracking app"
 						className="max-h-[700px] w-auto mx-auto"
 					/>
-					<Image
-						src={card}
-						alt="Credit card image"
-						className="absolute left-[50%] -translate-x-[30%] top-44 scale-[1.45]"
-					/>
+					<motion.div
+						className="absolute left-[30%] top-44 origin-center"
+						initial={{scale: 0}}
+						whileInView={{scale: 1.45}}
+						transition={{duration: 0.5, type: 'spring'}}
+					>
+						<Image
+							src={card}
+							alt="Credit card image"
+
+						/>
+					</motion.div>
 				</div>
 
 				<div className="col-span-5 col-start-8 flex flex-col justify-center relative gap-6">
