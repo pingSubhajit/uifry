@@ -3,6 +3,9 @@ import {Inter} from 'next/font/google'
 import './globals.css'
 import './clash-display.css'
 import ThemeProvider from '@/components/providers/ThemeProvider'
+import grainUnderlay from '@/public/grain_underlay.png'
+import Image from 'next/image'
+import {cn} from '@/lib/utils'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -18,16 +21,21 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="font-ClashDisplay">
+			<body className="font-ClashDisplay bg-white dark:bg-zinc-950">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
-					<main className="min-h-screen bg-white dark:bg-zinc-950 px-[175px] py-10 overflow-x-hidden">
+					<main className="min-h-screen px-[175px] py-10 overflow-x-hidden">
 						{children}
 					</main>
+
+					<Image src={grainUnderlay} alt="Grain underlay" className={cn(
+						'absolute w-full top-0 left-0 z-[-1] pointer-events-none h-[8220px]',
+						'mix-blend-soft-light'
+					)} />
 				</ThemeProvider>
 			</body>
 		</html>
