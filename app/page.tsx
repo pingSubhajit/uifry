@@ -1,5 +1,6 @@
 import HeroSection from '@/components/HeroSection'
 import {Metadata} from 'next'
+import FeaturesGrid from '@/components/FeaturesGrid'
 
 export const metadata: Metadata = {
 	title: 'Batch System Assignment | UIFry',
@@ -15,7 +16,7 @@ const HomePage = () => {
 	return (
 		<>
 			<HeroSection className="mt-10" />
-			{/*<FeaturesGrid />*/}
+			<FeaturesGrid />
 			{/*<Advantages className="mt-20" />*/}
 			{/*<Testimonials className="mt-20" />*/}
 			{/*<FaqSection className="mt-64" />*/}

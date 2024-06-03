@@ -1,7 +1,7 @@
 import Star from '@/assets/Star'
 import GridContainer from '@/components/utilities/GridContainer'
 
-const FeaturesGrid = ({ className }: { className?: string }) => {
+const FaqSection = ({ className }: { className?: string }) => {
 	return (
 		<GridContainer className={className}>
 			<div className="col-span-full relative mb-10">
@@ -68,4 +68,4 @@ const FeaturesGrid = ({ className }: { className?: string }) => {
 	)
 }
 
-export default FeaturesGrid
+export default FaqSection
