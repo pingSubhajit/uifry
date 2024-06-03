@@ -9,10 +9,10 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
 	title: 'Batch System Assignment | UIFry',
-	description: 'This is the assignment for the frontend development internship at Batch System. This project is crafted with Next.js, Tailwind CSS, Framer Motion, and TypeScript. This is a mobile responsive replica of the Figma design that was provided with the assignment details',
+	description: 'This is the assignment for the frontend development internship at Batch System. This project is crafted with Next.js, Tailwind CSS, Framer Motion, and TypeScript. This is a mobile responsive replica of the Figma design that was provided with the assignment details.',
 	openGraph: {
 		title: 'Batch System Assignment | UIFry',
-		description: 'This is the assignment for the frontend development internship at Batch System. This project is crafted with Next.js, Tailwind CSS, Framer Motion, and TypeScript. This is a mobile responsive replica of the Figma design that was provided with the assignment details',
+		description: 'This is the assignment for the frontend development internship at Batch System. This project is crafted with Next.js, Tailwind CSS, Framer Motion, and TypeScript. This is a mobile responsive replica of the Figma design that was provided with the assignment details.',
 		type: 'website'
 	}
 }

@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Batch Systems Frontend Intern Assignment
 
-## Getting Started
+This project is developed as the assignment for the Frontend Developer Internship position at Batch System. This project is crafted with Next.js, Tailwind CSS, Framer Motion, and TypeScript. This is a mobile responsive replica of the Figma design that was provided with the assignment details.
 
-First, run the development server:
+### Live Demo
+[Click here to view the live demo](https://uifry-batch.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Links
+- [Figma Design](https://www.figma.com/community/file/1145991068621514311)
+- [Instructions](https://gist.github.com/sobingt/5be38eb193b1ba10e532b0965c161d74)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
+- Mobile responsive design
+- Animated transitions
+- Dark mode
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Development server
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Run `yarn` to install all the dependencies.
+- Run `yarn run dev` for a dev server.
+- Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
-## Learn More
+### Build
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Run `yarn run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Run `yarn start` to serve the build project.
